@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Book() {
+export default function SignIn() {
     return (
         <div>
-            Book
+            Hello from SignIn page
         </div>
     )
 }

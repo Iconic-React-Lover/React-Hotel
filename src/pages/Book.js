@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Payment() {
+export default function Book() {
     return (
         <div>
-            
+            Hello from Book page
         </div>
     )
 }

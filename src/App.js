@@ -1,48 +1,29 @@
 import React from "react";
+import "./App.css";
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+
 import './index.css';
-import Book from "./components/Book";
-import Home from "./components/Home";
-import House from "./components/House";
-import Payment from "./components/Payment";
-import Profile from "./components/Profile";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import Book from "./pages/Book";
+import Home from "./pages/Home";
+import House from "./pages/House";
+import Payment from "./pages/Payment";
+import Profile from "./pages/Profile";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Basic from "./pages/Basic";
+import Error from "./pages/Error";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <Router>
+      <Navbar />
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-            <li>
-              <Link to="/signin">SignIn</Link>
-            </li>
-            <li>
-              <Link to="/signup">SignUp</Link>
-            </li>
-            <li>
-              <Link to="/book">Book</Link>
-            </li>
-            <li>
-              <Link to="/House">House</Link>
-            </li>
-            <li>
-              <Link to="/payment">Payment</Link>
-            </li>
-          </ul>
-        </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -53,7 +34,7 @@ export default function App() {
           <Route path="/profile">
             <Profile />
           </Route>
-          <Route path="/sigin">
+          <Route path="/signin">
             <SignIn />
           </Route>
           <Route path="/signup">
@@ -67,6 +48,12 @@ export default function App() {
           </Route>
           <Route path="/payment">
             <Payment />
+          </Route>
+          <Route path="/basic">
+            <Basic />
+          </Route>
+          <Route path="/error">
+            <Error />
           </Route>
         </Switch>
       </div>
