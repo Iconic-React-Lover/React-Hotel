@@ -55,6 +55,20 @@ export default function App() {
           <Route path="/error">
             <Error />
           </Route>
+          <Route path="/props">
+            <ComponentWithProps backgroundColor="blue" name="Props" />
+          </Route>
+          <Route path="/propChildren">
+            <ComponentWithPropChildren >
+              <h1> Hello </h1>
+            </ComponentWithPropChildren>
+          </Route>
+          <Route path="/class">
+               <Basic_With_Class name="John" />
+          </Route>
+          <Route path="/update">
+               <Update />
+          </Route>
         </Switch>
       </div>
     </Router>
