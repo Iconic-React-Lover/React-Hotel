@@ -55,7 +55,7 @@ export default function App() {
           <Route path="/error">
             <Error />
           </Route>
-          <Route path="/props">
+          {/* <Route path="/props">
             <ComponentWithProps backgroundColor="blue" name="Props" />
           </Route>
           <Route path="/propChildren">
@@ -68,7 +68,7 @@ export default function App() {
           </Route>
           <Route path="/update">
                <Update />
-          </Route>
+          </Route> */}
         </Switch>
       </div>
     </Router>
