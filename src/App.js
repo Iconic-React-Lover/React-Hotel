@@ -16,8 +16,9 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Basic from "./pages/Basic";
-import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
+import Service from "./components/Services";
+import Error from "./pages/Error";
 
 export default function App() {
   return (
