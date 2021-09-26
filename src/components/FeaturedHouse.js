@@ -1,16 +1,26 @@
-import React, { Component } from 'react'; 
-import {HouseContext} from "../context";
+import React, { Component } from 'react';
+import { HouseContext } from "../context";
+import Loading from ".Loading";
+import House from "./House";
+import Title from "./Title";
 
-export default class FeaturedHouse extends
-Component {
-    static contextType = HouseContext
+export default class FeaturedHouse extends Component {
+    static contextType = HouseContext;
+
     render() {
-        const value = this.context;
-        console.log(value);
+        let { featuredHouse: house } = this.context;
+        this.context;
+        house = house.map(house => {
+            return <House key={house.id} house={house} />
+        })
+
         return (
-            <div>
-                Hello from Featured House {value}
-            </div>
-        )
+            <section className="featured-rooms">
+                <Title title="featured rooms" />
+                <div className="featured-rooms-center">
+                    {loading ? <Loading /> : house}
+                </div>
+            </section>
+        );
     }
 }
