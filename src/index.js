@@ -5,13 +5,14 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import {HouseProvider} from './context'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <HouseProvider>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>,
+  </HouseProvider>,
   document.getElementById('root')
 );
 
