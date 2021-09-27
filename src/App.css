@@ -270,12 +270,12 @@ h6 {
   }
 }
 /*end of services */
-/* featured rooms */
+/* featured house */
 
-.featured-rooms {
+.featured-house {
   padding: 5rem 0;
 }
-.featured-rooms-center {
+.featured-house-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -284,20 +284,20 @@ h6 {
   grid-column-gap: 40px;
 }
 @media screen and (min-width: 776px) {
-  .featured-rooms-center {
+  .featured-house-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
-  .featured-rooms-center {
+  .featured-house-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end pf featured rooms */
+/* end pf featured house */
 /* room */
-.room {
+.house {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
@@ -435,10 +435,10 @@ h6 {
 }
 /* end of single room*/
 /* roomlist */
-.roomslist {
+.houselist {
   padding: 5rem 0;
 }
-.roomslist-center {
+.houselist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -448,18 +448,18 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .houselist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .houselist-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
 /* end of roomlist */
-/*  rooms fitler*/
+/*  house fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -510,4 +510,4 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+/* end of house fitler*/

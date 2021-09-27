@@ -43,6 +43,8 @@ export default function App() {
           <Route path="/house">
             <House />
           </Route>
+          <Route path="/house/:slug" component= {SingleHouse}/>
+          <Route component={Error} />
           <Route path="/book">
             <Book />
           </Route>
