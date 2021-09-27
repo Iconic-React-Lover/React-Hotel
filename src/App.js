@@ -18,6 +18,7 @@ import SignUp from "./pages/SignUp";
 import Basic from "./pages/Basic";
 import Navbar from "./components/Navbar";
 import Error from "./pages/Error";
+import SingleHouse from "./pages/SingleHouse";
 
 export default function App() {
   return (
