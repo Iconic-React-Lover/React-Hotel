@@ -46,13 +46,13 @@ export default class SingleHouse extends Component {
     
         return (
           <>
-            <StyledHero img={images[0] || this.state.defaultBcg}>
+            {/* <StyledHero img={images[0] || this.state.defaultBcg}>
               <Banner title={`${name} house`}>
                 <Link to="/house" className="btn-primary">
                   back to house
                 </Link>
               </Banner>
-            </StyledHero>
+            </StyledHero> */}
             <section className="single-house">
               <div className="single-house-images">
                 {defaultImages.map((item, index) => (

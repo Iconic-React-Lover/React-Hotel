@@ -296,12 +296,12 @@ h6 {
   }
 }
 /* end pf featured house */
-/* room */
+/* house */
 .house {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.room:hover {
+.house:hover {
   box-shadow: var(--darkShadow);
 }
 
@@ -331,7 +331,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+.house-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -347,10 +347,10 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .house-link {
   transform: translate(-50%, -50%) scale(1);
 }
-.room-info {
+.house-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
@@ -358,13 +358,13 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
-/* single room*/
+/* end of house  */
+/* single house*/
 
-.single-room {
+.single-house {
   padding: 5rem 0 0 0;
 }
-.single-room-images {
+.single-house-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -372,11 +372,11 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-.single-room-images img {
+.single-house-images img {
   width: 100%;
   display: block;
 }
-.single-room-info {
+.single-house-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -402,11 +402,11 @@ h6 {
 .info h6 {
   font-weight: 300;
 }
-.room-extras {
+.house-extras {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-extras h6 {
+.house-extras h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -418,13 +418,13 @@ h6 {
   grid-row-gap: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-extras {
+  .single-house-images,
+  .single-house-info,
+  .house-extras {
     width: 95vw;
     max-width: 1170px;
   }
-  .single-room-info {
+  .single-house-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
@@ -433,8 +433,8 @@ h6 {
     padding-left: 3rem;
   }
 }
-/* end of single room*/
-/* roomlist */
+/* end of single house*/
+/* houselist */
 .houselist {
   padding: 5rem 0;
 }
@@ -458,7 +458,7 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of roomlist */
+/* end of houselist */
 /*  house fitler*/
 .filter-container {
   padding: 5rem 0;
