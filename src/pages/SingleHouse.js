@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import { Link } from 'react-router-dom'
 import { HouseContext } from '../context'
+import StyledHero from "../components/StyledHero";
 
 export default class SingleHouse extends Component {
     constructor(props) {
@@ -46,13 +47,13 @@ export default class SingleHouse extends Component {
     
         return (
           <>
-            {/* <StyledHero img={images[0] || this.state.defaultBcg}>
+            <StyledHero img={images[0] || this.state.defaultBcg}>
               <Banner title={`${name} house`}>
                 <Link to="/house" className="btn-primary">
                   back to house
                 </Link>
               </Banner>
-            </StyledHero> */}
+            </StyledHero>
             <section className="single-house">
               <div className="single-house-images">
                 {defaultImages.map((item, index) => (
